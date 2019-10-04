@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'San Francisco Text Light';
+  src: url('fonts/SFUI Text/SFUIText-Light.eot');
+  src: url('fonts/SFUI Text/SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+  url('fonts/SFUI Text/SFUIText-Light.woff') format('woff'),
+  url('fonts/SFUI Text/SFUIText-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'San Francisco Text Bold';
+    src: url('fonts/SFUI Text/SFUIText-Bold.eot');
+    src: url('fonts/SFUI Text/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SFUI Text/SFUIText-Bold.woff') format('woff'),
+    url('fonts/SFUI Text/SFUIText-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@mixin light {
+  font-weight: 400;
+  font-family: San Francisco Text Light;
+}
+@mixin bold {
+  font-weight: 700;
+  font-family: San Francisco Text Light;
+}

@@ -1,0 +1,125 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  text-decoration: none;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'San Francisco Text Light';
+  src: url("fonts/SFUI Text/SFUIText-Light.eot");
+  src: url("fonts/SFUI Text/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("fonts/SFUI Text/SFUIText-Light.woff") format("woff"), url("fonts/SFUI Text/SFUIText-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Text Bold';
+  src: url("fonts/SFUI Text/SFUIText-Bold.eot");
+  src: url("fonts/SFUI Text/SFUIText-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SFUI Text/SFUIText-Bold.woff") format("woff"), url("fonts/SFUI Text/SFUIText-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero {
+  font-weight: 400;
+  font-family: San Francisco Text Light;
+  padding-top: 50px;
+  padding-left: 200px;
+  float: left;
+}
+
+.hero__phone {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__image {
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+}
+
+.hero__button {
+  margin-right: 150px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.hero__button-img {
+  margin-right: 10px;
+}
+
+.hero__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__email-text {
+  font-weight: 400;
+  font-family: San Francisco Text Light;
+  font-size: 24px;
+  color: #3c3c3b;
+}
+
+.hero__email-img {
+  margin-right: 20px;
+}
+
+.hero__bck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.saidbar {
+  padding-top: 60px;
+  font-weight: 400;
+  font-family: San Francisco Text Light;
+  font-size: 30px;
+}
+
+.saidbar__menu {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.saidbar__logo {
+  margin-right: 50px;
+}
+
+.saidbar__item {
+  margin-right: 20px;
+  color: #3c3c3b;
+  font-weight: 400;
+  font-family: San Francisco Text Light;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

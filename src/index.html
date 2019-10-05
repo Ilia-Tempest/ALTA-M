@@ -15,18 +15,22 @@
   </title>
 </head>
 <body>
-  <header class="hero">
+  <header>
+      <div class="hero__bck">
+          <img class="hero__background" src="img/hero/background-right.png" alt="">
+      </div>
+    <div class="hero">
     <div class="container">
-      <nav class="navbar navbar-light bg-light">
+      <nav class="hero__navbar">
        <div class="hero__phone">
           <img src="img/hero/phone.png" alt="" class="hero__image">
-          <a class="navbar-brand"
+          <a class="hero__phone-text"
         href="tel:8 (800) 610-61-00">8 (800) 610-61-00</a>
        </div>
-        <div class="hero__button">
-          <a class="btn btn-danger btn-lg">
+        <div class="hero__button" onclick="show_popap('modal-1')">
+          <a>
             <img class="hero__button-img" src="img/hero/cursor__right.png" alt="">
-              <span class="">Заказать звонок</span>
+              <span class="hero__button-text">Заказать звонок</span>
           </a>
         </div>
         <!-- /.hero__button -->
@@ -38,7 +42,7 @@
       
       </nav>
       <div class="saidbar">
-        <ul class="saidbar__menu">
+        <ul class="saidbar__menu row">
             <img class="saidbar__logo" src="img/hero/Alta-m-logo-fin.png" alt="">
             <li><a href="#" class="saidbar__item">О нас</a></li>
             <li><a href="#price" class="saidbar__item ">Виды грузоперевозок</a></li>
@@ -46,11 +50,52 @@
             <li><a href="#contact" class="saidbar__item">Контакты</a></li>
              </ul>
       </div>
+      <section class="header">
+        <span class="header__title">
+            Предоставляем услуги<br>
+            по транспортировке и экспедированию <br>
+            грузов в любую точку земного шара
+        </span>
+        <form action="" class="header__form">
+          <input class="header__input" type="tel" placeholder="Номер телефона">
+          <a class="header__button">
+              <img class="header__button-img" src="img/hero/cursor__right.png" alt="">
+                <span class="header__button-text">Оставить заявку</span>
+            </a>
+        </form>
+      </section>
+      <!-- /.header -->
+
+      
       <!-- /.saidbar -->
     </div>
+    </div>
   </header>
-  <section class="hero__bck">
-      <img class="hero__background" src="img/hero/background-right.png" alt="">
-  </section>
+  <div class="overlay" id="modal-1">
+    <div class="flex-popap">
+      <div class="popap">
+        <span class="close_popap">
+          <img src="img/hero/close.png" alt="">
+        </span>
+        <h2 class="overlay__title">Оставьте ваш телефон <br>
+          и наш менеджер свяжется с вами</h2>
+          <form action="">
+            <input class="overlay__input" type="tel" placeholder="Номер телефона">
+            <button class="overlay__button">
+             <img class="overlay__button-img" src="img/hero/cursor__right.png" alt="">
+            Номер телефона
+            </button>
+          </form>
+      </div>
+    </div>
+  </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+  <script src="js/modal.js">
+  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+.overlay 
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6); /* затемнение фона */
+  display: none;
+  &__title
+  text-align: center
+  &__input
+    margin-top: 50px
+    width: 362px
+    height: 60px
+  &__button
+     display: block
+     margin: auto
+     margin-top: 20px
+     background-color: #f93d3d
+     color: #ffffff
+     font-size: 18px
+     padding: 22px 20px 22px 20px
+     &-img
+      margin-right: 10px
+      display: inline-block
+
+.overlay.active 
+  display: block;
+
+.overlay .flex-popap 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.overlay .flex-popap .popap 
+  position: relative;
+  background-color: #fff;  /* цвет фона всплывающего блока */
+  padding: 35px 25px;
+  margin: 0 10px;
+  width: 754px;
+  height: 363px;
+  overflow: auto;
+
+.popap span 
+  position: absolute
+  top: 0
+  right: 0
+  padding-top: 20px
+  padding-right: 20px
+  cursor: pointer

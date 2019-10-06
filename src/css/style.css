@@ -9,6 +9,22 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-bottom: 54px;
+    padding-top: 54px;
+  }
+}
+
 @font-face {
   font-family: 'San Francisco Text Light';
   src: url("fonts/SFUI Text/SFUIText-Light.eot");
@@ -108,6 +124,10 @@ img {
   margin-right: 20px;
 }
 
+.hero__navigate-img {
+  display: none;
+}
+
 .hero__background {
   position: absolute;
   top: 0;
@@ -144,6 +164,10 @@ img {
   margin-right: 50px;
 }
 
+.saidbar__log {
+  display: none;
+}
+
 .saidbar__item {
   margin-right: 20px;
   color: #3c3c3b;
@@ -159,9 +183,20 @@ img {
 .header__title {
   display: inline-block;
   font-size: 40px;
-  line-height: 80px;
-  letter-spacing: 0.6px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  color: #010101;
+}
+
+.header__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .header__input {
@@ -183,17 +218,302 @@ img {
   margin-left: 10px;
 }
 
+@media (max-width: 1500px) {
+  .hero {
+    margin-left: 50px;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero {
-    padding-left: 0;
+    margin-left: 20px;
   }
   .hero__button {
     margin-right: 0;
   }
   .hero__background {
-    width: 500px;
+    display: none;
+    width: 706px;
     height: 500px;
   }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 10px;
+    max-width: 320px;
+    margin: auto;
+    position: relative;
+  }
+  .hero__background {
+    display: none;
+  }
+  .hero__button {
+    margin-right: 0;
+    padding: 10px 8px;
+    margin: auto;
+  }
+  .hero__navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero__navigate-img {
+    padding-top: 10px;
+    display: inline-block;
+  }
+  .hero__phone {
+    padding-right: 10px;
+    margin: auto;
+  }
+  .hero__phone-text {
+    font-size: 10px;
+  }
+  .hero__image {
+    width: 10px;
+    height: 10px;
+  }
+  .hero__email {
+    display: none;
+  }
+  .hero__email-text {
+    font-size: 10px;
+  }
+  .hero__email-img {
+    width: 14px;
+    height: 10px;
+  }
+  .saidbar {
+    padding-top: 0;
+  }
+  .saidbar__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .saidbar__item {
+    display: none;
+  }
+  .saidbar__logo {
+    display: none;
+  }
+  .saidbar__log {
+    display: block;
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    margin-top: 10px;
+    top: 0;
+    right: 0;
+  }
+  .saidbar__menu {
+    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header {
+    padding-top: 0;
+  }
+  .header__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .header__input {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
+  .header__button {
+    padding: 10px 15px;
+    margin-top: 15px;
+  }
+  .header__title {
+    font-weight: 700;
+    font-family: San Francisco Text Light;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.23px;
+    display: inline-block;
+    margin: auto;
+    width: 273px;
+    height: 62px;
+  }
+  .header__button {
+    display: block;
+  }
+}
+
+/*Стили для блока о нас*/
+.about__title {
+  font-family: "Bebas Neue Regular";
+  font-size: 40px;
+  color: #010101;
+  margin-bottom: 50px;
+}
+
+.about__subtitle {
+  display: inline-block;
+  color: #010101;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.24px;
+  font-weight: 400;
+  font-family: San Francisco Text Light;
+}
+
+.about__image {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .about {
+    letter-spacing: 0.28px;
+  }
+  .about__title {
+    color: #010101;
+    font-size: 30px;
+  }
+  .about__image {
+    opacity: 1;
+  }
+  .about__subtitle {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.12px;
+  }
+}
+
+/*Стили для блока work*/
+.work__title {
+  margin-bottom: 60px;
+  color: #010101;
+  font-family: "Bebas Neue Regular";
+  font-size: 40px;
+}
+
+.work__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work__text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.work__image {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .work__title {
+    color: #010101;
+    font-family: "Bebas Neue Regular";
+    font-size: 30px;
+  }
+  .work__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .work__item {
+    margin-right: 50px;
+  }
+  .work__image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .work__text {
+    color: #010101;
+    font-family: "SFUI Text";
+    font-size: 12px;
+    line-height: 16px;
+    width: 102px;
+    height: 58px;
+    margin-bottom: 35px;
+  }
+}
+
+/*Стили для блока all-work*/
+.all-work-main {
+  color: #010101;
+  font-family: "Bebas Neue Regular";
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.all-work__item {
+  width: 950px;
+  height: 851px;
+  display: inline-block;
+}
+
+.all-work__item1 {
+  background-image: url(../img/all-work/one.png);
+}
+
+.all-work__item2 {
+  background-image: url(../img/all-work/two.png);
+}
+
+.all-work__item3 {
+  background-image: url(../img/all-work/three.png);
+}
+
+.all-work__item4 {
+  background-image: url(../img/all-work/four.png);
 }
 
 /*Стили для всплывающего окна*/

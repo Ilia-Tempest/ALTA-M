@@ -4,9 +4,7 @@ require_once('PHPMailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -27,13 +25,13 @@ $mail->addAddress('webitrab@gmail.com');     // Кому будет уходит
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+$mail->Subject = 'Заявка с сайта "ООО АЛЬТА М" сайта';
+$mail->Body    = '<br>Пользователь оставил заявку, его телефон: ' .$phone;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: thank-you.html');
+    header('location: ../index.html.overlay');
 }
 ?>

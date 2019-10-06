@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
   <title>
     ООО "АЛЬТА М"
   </title>
@@ -20,8 +21,11 @@
           <img class="hero__background" src="img/hero/background-right.png" alt="">
       </div>
     <div class="hero">
-    <div class="container">
-      <nav class="hero__navbar">
+      <nav class="hero__navbar container">
+        <div ">
+          <img class="hero__navigate-img" src="img/hero/navigate.png" alt="">
+        </div>
+        
        <div class="hero__phone">
           <img src="img/hero/phone.png" alt="" class="hero__image">
           <a class="hero__phone-text"
@@ -33,15 +37,17 @@
               <span class="hero__button-text">Заказать звонок</span>
           </a>
         </div>
+      
         <!-- /.hero__button -->
         <div class="hero__email">
          <img class="hero__email-img" src="img/hero/email_object.png" alt="">
          <a class="hero__email-text" href="mailto:zakaz@альта-м.рф">zakaz@альта-м.рф</a>
         </div>
         <!-- /.hero__email -->
-      
       </nav>
-      <div class="saidbar">
+      <img class="saidbar__log" src="img/hero/Alta-m-logo-fin.png">
+      <div class="saidbar container">
+        
         <ul class="saidbar__menu row">
             <img class="saidbar__logo" src="img/hero/Alta-m-logo-fin.png" alt="">
             <li><a href="#" class="saidbar__item">О нас</a></li>
@@ -49,22 +55,23 @@
             <li><a href="#fideback" class="saidbar__item">Услуги</a></li>
             <li><a href="#contact" class="saidbar__item">Контакты</a></li>
              </ul>
-      </div>
-      <section class="header">
-        <span class="header__title">
-            Предоставляем услуги<br>
+      <section class="header container">
+        
+        <h1 class="header__title">
+            Предоставляем услуги <br>
             по транспортировке и экспедированию <br>
             грузов в любую точку земного шара
-        </span>
+        </h1>
         <form action="form/mail.php" method="POST" class="header__form">
           <input class="header__input" name="user_phone" required type="tel" placeholder="Номер телефона">
           <button type="submit" class="header__button">
-          <a >
+          <a>
               <img class="header__button-img" src="img/hero/cursor__right.png" alt="">
                 <span class="header__button-text">Оставить заявку</span>
             </a>
           </button>
         </form>
+      </div>
       </section>
       <!-- /.header -->
 
@@ -73,6 +80,172 @@
     </div>
     </div>
   </header>
+  <main>
+    <section class="section about">
+      <div class="about-block">
+        <div class="container">
+          <h2 class="about__title">О нас
+              <img class="about__image" src="img/about/bottom.png" alt="">
+          </h2> 
+          <!-- /.about__title -->
+          
+          <span class="about__subtitle">
+            Более 10 лет мы осуществляем транспортные экспедиции по всему миру. Накопленный нашими специалистами опыт , помог отправить из точки А в точку Б тысячи тонн грузов, а это свыше 550 договоров и 2500 довольных заказчиков. Клиенты выбирают нас за надёжность и быстроту услуги; передовые технологий хранения и транспортные средства. У нас нет ограничений: компании под силу любое расстояние, объём и вес. Компания осуществляет широкий комплекс услуг, от экспорта и импорта, до страхования, помощи в оформлении деклараций и на таможнях.
+          </span>
+           <!-- /.about__subtitle -->
+        </div>
+      </div>
+      <!-- /.about-block -->
+    </section>
+    <!-- /.section about -->
+    <section class="work section">
+      <div class="work__block">
+        <div class="container">
+          <h3 class="work__title">Преимущества работы с нами</h3>
+          <!-- /.work__title -->
+          <div class="work__container">
+            <div class="work__item">
+              <div class="work__image">
+                <img src="img/work/one.png" alt="">
+              </div>
+              <!-- /.work__image -->
+              <div class="work__text">
+                  Гибкая ценовая политика, скидки постоянным клиентам
+              </div>
+              <!-- /.work__text -->
+            </div>
+            <!-- /.work__item -->
+            <div class="work__item">
+              <div class="work__image">
+                <img src="img/work/two.png" alt="">
+              </div>
+              <!-- /.work__image -->
+              <div class="work__text">
+                  Доставка точно 
+                  в срок, возможность регулярных поставок груза
+              </div>
+              <!-- /.work__text -->
+            </div>
+            <!-- /.work__item -->
+            <div class="work__item">
+              <div class="work__image">
+                <img src="img/work/three.png" alt="">
+              </div>
+              <!-- /.work__image -->
+              <div class="work__text">
+                  Соблюдение необходимых условий транспортирвоки
+              </div>
+              <!-- /.work__text -->
+            </div>
+            <!-- /.work__item -->
+            <div class="work__item">
+              <div class="work__image">
+                <img src="img/work/four.png" alt="">
+              </div>
+              <!-- /.work__image -->
+              <div class="work__text">
+                  Правильное заполнение сопроводительных документов
+              </div>
+              <!-- /.work__text -->
+            </div>
+            <!-- /.work__item -->
+          </div>
+          <!-- /.work__container -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.work__block -->
+    </section>
+    <!-- /.work -->
+    <section class="all-work section">
+      <div class="all-work__block">
+        <div class="container">
+          <h4 class="all-work-main">
+              Виды грузоперевозок
+          </h4>
+          <div class="all-work__container">
+            <div class="all-work__item all-work__item1">
+              <div class="all-work__title">морские перевозки</div>
+              <!-- /.all-work__title -->
+              <div class="all-work__subtitle">Альта М – это низкие цены, высокая пропускная и провозная способность, а также возможность межконтинентальных маршрутов.</div>
+              <!-- /.all-work__subtitle -->
+              <div class="all-work__text">
+                  Перевозка грузов на морском судне пользуются огромной популярностью и потребностью: это один из самых выгодных и конкурирующих методов, а иногда и вовсе единственный возможный (примером может послужить случай, когда траты на авиа-транспортировку добавляют огромную себестоимость). Второе, после цены, преимущество – отсутствие ограничений по объёму, весу и типу груза (жидкие, твёрдые, сыпучие, огнеопасные и др.)
+
+                  Резюмируем преимущества в один список:  
+                      Гибкая и, зачастую, низкая цена (по сравнению с альтернативными методами) 
+                      Универсальность грузов 
+                      Любое расстояние, вплоть до межконтинентальных транспортировок
+                  
+                  «Альта М» доставит Ваш груз в любую точку Азии, Европы и Америки, с гарантией непревзойдённого сервиса, постоянными консультациями и отслеживанием заказа.                   
+              </div>
+              <!-- /.all-work__text -->
+              <div class="all-work__button">Оставить заявку</div>
+              <!-- /.all-work__button -->
+            </div>
+            <div class="all-work__item all-work__item2">
+              <div class="all-work__title">Ж/Д перевозки</div>
+              <!-- /.all-work__title -->
+              <div class="all-work__subtitle">
+                Альта М – это многолетний опыт транспортировок 
+                  по железнодорожным путям. 
+                </div>
+              <!-- /.all-work__subtitle -->
+              <div class="all-work__text">
+                  В России очень популярна транспортировка путём железнодорожного транспорта, и неспроста они занимают более четверти от общего объёма. И неспроста: ЖД независима от погодных условий, спокойно конкурирует с морскими перевозками и позволяет перенаправлять груз через всю длину необъятной России. Дополнительное преимущество – перевозка негабаритных грузов, размер которых ограничен только размером вагона. А цена будет ниже, по сравнению с автотранспортом.
+
+                  Помимо прочего, «Альта М» занимает лидирующие позиции по сохранности груза – мы в ответе за него, как за собственного ребёнка. Услуги, которые мы предоставляем:
+                      Доставка сборных (в контейнере), генеральных, контейнерных и навалочных грузов во внутреннем сообщении экспорта РФ; 
+                      Экспедирование грузов;
+                      Отслеживание и контроль грузоперевозки.
+                  
+                  С каждым клиентом работает целая команда наших профессионалов.                  
+              </div>
+              <!-- /.all-work__text -->
+              <div class="all-work__button">Оставить заявку</div>
+              <!-- /.all-work__button -->
+            </div>
+            <div class="all-work__item all-work__item3">
+              <div class="all-work__title">
+                  Автомобильные перевозки
+              </div>
+              <!-- /.all-work__title -->
+              <div class="all-work__subtitle">Альта М – это профессиональные водители, которые доставят товар к сроку и без единой царапины!</div>
+              <!-- /.all-work__subtitle -->
+              <div class="all-work__text">Инфраструктура не стоит на месте, дорог всё больше, а значит и возможностей для автомобильных манёвров и перевозки грузов именно этим путём – больше. Потребность в качественном перевозчике, вместо посредственной курьерской службы, поможет удовлетворить компания «Альта М»! Мы тщательно позаботимся, чтобы груз достиг точки Б в целостности и сохранности, и успел доехать в назначенный срок.
+
+                  Наша компания осуществляет автотранспортировки по всей РФ, а также странам СНГ и Европы. Ключевые партнёры, накопленный годами опыт и команда специалистов гарантируют высокое качество нашего сервиса. Тарифы на услуги максимально гибкие и лояльные, а выгодные условия предоставлены как для корпоративных, так и для частных лиц.
+                  
+                  Переложите всю рутину на нас: оформлением документов, страховок и прочих тонкостей займутся наши специалисты. Вам только остаётся получить известие об успешной доставке груза. 
+                  </div>
+              <!-- /.all-work__text -->
+              <div class="all-work__button">Оставить заявку</div>
+              <!-- /.all-work__button -->
+                </div>
+            <div class="all-work__item all-work__item4">
+              <div class="all-work__title">Авиаперевозки</div>
+              <!-- /.all-work__title -->
+              <div class="all-work__subtitle">Альта М – это минимальные сроки, непревзойденная надёжность и гибкая цена!</div>
+              <!-- /.all-work__subtitle -->
+              <div class="all-work__text">Минимальные издержки – самая важная цель, которую преследует бизнес, а потому старается экономить на всём, что дозволено. Но когда потерянный день приносит огромные убытки, целесообразнее воспользоваться авиатранспортом. А также нередки случаи, когда груз может быть доставлен только воздушным сообщением. Дорогой, быстрый и энергичный. Сохранность и надёжность перевозки при этом остаётся на месте. 
+
+                  «Альта М» осуществляет авиаперевозки по всей территории РФ, стран СНГ и дальнего зарубежья, оказывая один из самых высоких по качеству сервис. Все формальности, тонкости и нюансы мы берём на себя, Вам остаётся лишь довериться.
+                  
+                  Компания сформировала самые гибкие авиа-тарифы, а высокая квалификация сотрудников позволяет нам моментально реагировать на все изменения в воздушном пространстве. 
+                  </div>
+              <!-- /.all-work__text -->
+              <div class="all-work__button">Оставить заявку</div>
+              <!-- /.all-work__button -->
+                </div>
+          </div>
+          <!-- /.all-work__container -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.all-work__block -->
+    </section>
+    <!-- /.all-work -->
+  </main>
   <div class="overlay" id="modal-1">
     <div class="flex-popap">
       <div class="popap">
@@ -81,8 +254,8 @@
         </span>
         <h2 class="overlay__title">Оставьте ваш телефон <br>
           и наш менеджер свяжется с вами</h2>
-          <form action="">
-            <input class="overlay__input" type="tel" placeholder="Номер телефона">
+          <form action="form/mail.php" method="POST">
+            <input class="overlay__input" name="user_phone" required type="tel" placeholder="Номер телефона">
             <button type="submit" class="overlay__button">
              <img class="overlay__button-img" src="img/hero/cursor__right.png" alt="">
             Номер телефона
@@ -99,5 +272,23 @@
   <script src="js/modal.js">
   </script>
   <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
+
+
+
+
+  <script>
+    $(document).ready(function() {
+  $('.all-work__container').slick({
+    slidesToShow: 1,
+  slidesToScroll: 1,
+  
+  prevArrow: $('.arrows__left'),
+  nextArrow: $('.arrows__right'),
+  
+
+  });
+});
+  </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+.about
+  &__title
+    font-family: "Bebas Neue Regular"
+    font-size: 40px
+    color: #010101
+    margin-bottom: 50px
+  &__subtitle
+    display: inline-block
+    color: #010101
+    font-size: 24px
+    line-height: 30px
+    letter-spacing: 0.24px
+    +light
+  &__image
+    opacity: 0
+
+@media (max-width: 768px)
+  .about
+    &__title
+     color: #010101
+     font-size: 30px
+    letter-spacing: 0.28px
+    &__image
+      opacity: 1
+    &__subtitle
+      font-size: 20px
+      line-height: 18px
+      letter-spacing: 0.12px

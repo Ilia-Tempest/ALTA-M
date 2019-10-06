@@ -11,14 +11,13 @@ $email = $_POST['user_email'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'ssl://smtp.gmail.com';  																							// Specify main and backup SMTP servers
+$mail->Host = 'ssl://smtp.yandex.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'iparshacov@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Arialdragon47'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->Username = 'gesser1234@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'Arialdragon47'; // Ваш пароль от почты с которой будут отправляться письма                           // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('iparshacov@gmail.com'); // от кого будет уходить письмо?
+$mail->setFrom('gesser1234@yandex.ru'); // от кого будет уходить письмо?
 $mail->addAddress('webitrab@gmail.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');

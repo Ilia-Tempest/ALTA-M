@@ -1,6 +1,6 @@
 <?php 
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require_once('PHPMailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
@@ -11,7 +11,7 @@ $email = $_POST['user_email'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
+$mail->Host = 'ssl://smtp.gmail.com';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'iparshacov@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'Arialdragon47'; // Ваш пароль от почты с которой будут отправляться письма

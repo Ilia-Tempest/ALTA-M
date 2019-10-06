@@ -56,12 +56,14 @@
             по транспортировке и экспедированию <br>
             грузов в любую точку земного шара
         </span>
-        <form action="" class="header__form">
-          <input class="header__input" type="tel" placeholder="Номер телефона">
-          <a class="header__button">
+        <form action="form/mail.php" method="POST" class="header__form">
+          <input class="header__input" name="user_phone" required type="tel" placeholder="Номер телефона">
+          <button type="submit" class="header__button">
+          <a >
               <img class="header__button-img" src="img/hero/cursor__right.png" alt="">
                 <span class="header__button-text">Оставить заявку</span>
             </a>
+          </button>
         </form>
       </section>
       <!-- /.header -->
@@ -81,7 +83,7 @@
           и наш менеджер свяжется с вами</h2>
           <form action="">
             <input class="overlay__input" type="tel" placeholder="Номер телефона">
-            <button class="overlay__button">
+            <button type="submit" class="overlay__button">
              <img class="overlay__button-img" src="img/hero/cursor__right.png" alt="">
             Номер телефона
             </button>

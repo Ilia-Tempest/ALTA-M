@@ -196,6 +196,7 @@ img {
   }
 }
 
+/*Стили для всплывающего окна*/
 .overlay {
   position: fixed;
   z-index: 5;

@@ -494,10 +494,20 @@ a {
   margin-bottom: 60px;
 }
 
-.all-work__item {
-  width: 950px;
-  height: 851px;
+.all-work__container {
   display: inline-block;
+  position: absolute;
+}
+
+.all-work__item {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all-work__block {
+  background-color: #000000;
+  opacity: 0.6;
 }
 
 .all-work__item1 {
@@ -514,6 +524,29 @@ a {
 
 .all-work__item4 {
   background-image: url(../img/all-work/four.png);
+}
+
+.all-work__text {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #fefefe;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.all-work__title {
+  padding-left: 50px;
+  color: #fefefe;
+  font-family: "Bebas Neue Regular";
+  font-size: 48px;
+}
+
+.all-work__subtitle {
+  margin-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 137px;
+  color: #fefefe;
+  font-size: 30px;
 }
 
 /*Стили для всплывающего окна*/

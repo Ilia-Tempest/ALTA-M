@@ -7,15 +7,23 @@
   &__container
     display: inline-block
     position: absolute
+    width: 950px
+    height: 851px
+    margin: auto
   &__item
     display: block
-    background-size: cover
+    background-size: contain
     background-repeat: no-repeat
+    opacity: 1
   &__block
-     background-color: #000000
-     opacity: 0.6
+     width: 950px
+     height: 851px
+     display: flex
+     justify-content: flex-start
+     flex-wrap: wrap
+     position: relative
   &__item1
-    background-image: url(../img/all-work/one.png)
+    background-image: url(../img/all-work/one.png) 
   &__item2
     background-image: url(../img/all-work/two.png)
   &__item3
@@ -28,18 +36,50 @@
     color: #fefefe
     font-size: 24px
     line-height: 30px
-    
   &__title
     padding-left: 50px
     color: #fefefe
     font-family: "Bebas Neue Regular"
     font-size: 48px
   &__subtitle
-    margin-bottom: 40px
     padding-left: 50px
     padding-right: 137px
     color: #fefefe
     font-size: 30px
+  &__button
+    padding: 22px 28px 22px 28px
+    display: flex
+    align-items: center
+    color: #fefefe
+    background-color: #f93d3d
+    position: absolute
+    right: 0
+    bottom: 0
+    &-img
+      margin-right: 10px
+  &__touch
+    line-height: center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    cursor: pointer
+  &__left, &__right
+    border: 1px solid #f93d3d;
+    border-radius: 50%
+    padding: 6px 13px
+    
    
+    
+    
 
+
+
+
+  
+
+
+
+  
+
+  
     

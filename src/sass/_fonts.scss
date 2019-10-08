@@ -26,3 +26,25 @@
   font-weight: 700;
   font-family: San Francisco Text Light;
 }
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li button { 
+  border-radius: 50%;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px black solid;
+}
+
+.slick-dots li {
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+.slick-dots li button:active {
+  background-color: #f93d3d;
+}

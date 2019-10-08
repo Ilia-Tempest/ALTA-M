@@ -41,6 +41,33 @@ a {
   font-style: normal;
 }
 
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-dots li button {
+  border-radius: 50%;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px black solid;
+}
+
+.slick-dots li {
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+.slick-dots li button:active {
+  background-color: #f93d3d;
+}
+
 /*Стили для шапки*/
 .hero {
   font-weight: 400;
@@ -497,17 +524,30 @@ a {
 .all-work__container {
   display: inline-block;
   position: absolute;
+  width: 950px;
+  height: 851px;
+  margin: auto;
 }
 
 .all-work__item {
   display: block;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .all-work__block {
-  background-color: #000000;
-  opacity: 0.6;
+  width: 950px;
+  height: 851px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
 }
 
 .all-work__item1 {
@@ -542,11 +582,49 @@ a {
 }
 
 .all-work__subtitle {
-  margin-bottom: 40px;
   padding-left: 50px;
   padding-right: 137px;
   color: #fefefe;
   font-size: 30px;
+}
+
+.all-work__button {
+  padding: 22px 28px 22px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fefefe;
+  background-color: #f93d3d;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.all-work__button-img {
+  margin-right: 10px;
+}
+
+.all-work__touch {
+  line-height: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.all-work__left, .all-work__right {
+  border: 1px solid #f93d3d;
+  border-radius: 50%;
+  padding: 6px 13px;
 }
 
 /*Стили для всплывающего окна*/

@@ -23,28 +23,59 @@
   font-family: San Francisco Text Light;
 }
 @mixin bold {
-  font-weight: 700;
+  font-weight: 400;
   font-family: San Francisco Text Light;
 }
+
+
 
 .slick-dots {
   display: flex;
   justify-content: center;
 }
-.slick-dots li button { 
+.slick-dots li{ 
   border-radius: 50%;
   font-size: 0;
-  width: 12px;
-  height: 12px;
-  display: inline-block;
+  width: 1px;
+  height: 1px;
   border: 1px black solid;
+
 }
 
-.slick-dots li {
-  margin-right: 10px;
-  list-style-type: none;
+
+.slick-prev:before,
+.slick-next:before {
+
+color: black;
+border-radius: 50%;
+border: 1px solid #f93d3d;
+width: 61px;
+height: 61px;
+margin-right: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: red
+}
+.slick-prev:before {
+  content: "<";
+  left: -50;
+  
+}
+.slick-next:before {
+  content: ">";
+  
 }
 
-.slick-dots li button:active {
+.slick-slide {
+transition: all ease-in-out .3s;
+opacity: .2;
+}
+
+.slick-active {
   background-color: #f93d3d;
+}
+
+.slick-current {
+opacity: 1;
 }

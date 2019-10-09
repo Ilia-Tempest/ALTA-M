@@ -11,12 +11,12 @@ $phone = $_POST['user_phone'];
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'ssl://smtp.yandex.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'gesser1234@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Arialdragon47'; // Ваш пароль от почты с которой будут отправляться письма                           // Enable TLS encryption, `ssl` also accepted
+$mail->Username = 'schumakdmitry@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '1r!sL4Tt'; // Ваш пароль от почты с которой будут отправляться письма                           // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('gesser1234@yandex.ru'); // от кого будет уходить письмо?
-$mail->addAddress('webitrab@gmail.com');     // Кому будет уходить письмо 
+$mail->setFrom('schumakdmitry@yandex.ru'); // от кого будет уходить письмо?
+$mail->addAddress('zakaz@alta-m.spb.ru');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

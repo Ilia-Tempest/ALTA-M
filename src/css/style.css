@@ -75,16 +75,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: red;
-}
-
-.slick-prev:before {
-  content: "<";
-  left: -50;
-}
-
-.slick-next:before {
-  content: ">";
 }
 
 .slick-slide {
@@ -148,7 +138,7 @@ a {
   color: #ffffff;
   border: 1px solid black;
   background-color: #f93d3d;
-  padding: 21px 26px 24px 26px;
+  padding: 10px 15px;
 }
 
 .hero__button-text {
@@ -260,7 +250,13 @@ a {
 }
 
 .header__button {
-  padding: 22px 28px 22px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 15px;
   background-color: #f93d3d;
   border: 1px solid black;
   cursor: pointer;
@@ -283,7 +279,7 @@ a {
     margin-left: 20px;
   }
   .hero__button {
-    margin-right: 0;
+    margin-right: 2;
   }
   .hero__background {
     display: none;
@@ -295,6 +291,9 @@ a {
 @media (max-width: 1000px) {
   .hero {
     margin: 0;
+  }
+  .hero__button {
+    margin-left: 40px;
   }
 }
 
@@ -541,6 +540,10 @@ a {
 }
 
 /*Стили для блока all-work*/
+.all-work-mobale {
+  display: none;
+}
+
 .all-work-main {
   color: #010101;
   font-family: "Bebas Neue Regular";
@@ -560,7 +563,6 @@ a {
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 1;
 }
 
 .all-work__block {
@@ -594,6 +596,8 @@ a {
 }
 
 .all-work__text {
+  font-weight: 400;
+  font-family: San Francisco Text Light;
   padding-left: 50px;
   padding-right: 50px;
   color: #fefefe;
@@ -602,6 +606,7 @@ a {
 }
 
 .all-work__title {
+  padding-top: 40px;
   padding-left: 50px;
   color: #fefefe;
   font-family: "Bebas Neue Regular";
@@ -610,7 +615,6 @@ a {
 
 .all-work__subtitle {
   padding-left: 50px;
-  padding-right: 137px;
   color: #fefefe;
   font-size: 30px;
 }
@@ -632,6 +636,86 @@ a {
 
 .all-work__button-img {
   margin-right: 10px;
+}
+
+@media (max-width: 1110px) {
+  .all-work {
+    display: none;
+  }
+  .all-work-mobale {
+    display: block;
+  }
+  .all-work-main1 {
+    font-family: "Bebas Neue Regular";
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .all-work__mobile-title {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  .all-work__mobile-subtitle {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  .all-work__mobile__button {
+    background-color: #f93d3d;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 13px;
+    display: inline-block;
+  }
+  .all-work__mobile-text {
+    color: #ffffff;
+  }
+  .all-work__mobile-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .all-work {
+    display: none;
+  }
+  .all-work-mobale {
+    display: block;
+  }
+  .all-work-main1 {
+    font-family: "Bebas Neue Regular";
+    font-size: 30px;
+  }
+  .all-work__mobile-item {
+    margin-bottom: 30px;
+  }
+  .all-work__mobile__button {
+    background-color: #f93d3d;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 13px;
+    display: inline-block;
+  }
+  .all-work__mobile-title {
+    color: #000000;
+    font-family: "Bebas Neue Regular";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 11px;
+  }
+  .all-work__mobile-subtitle {
+    color: #000000;
+    font-family: "SFUI Text";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+  .all-work__mobile-text {
+    color: #ffffff;
+  }
 }
 
 /*Стили для всплывающего окна*/
@@ -883,6 +967,7 @@ a {
 
 .slick-prev:before {
   content: "<";
+  color: #f93d3d;
 }
 
 [dir="rtl"] .slick-prev:before {
@@ -890,6 +975,7 @@ a {
 }
 
 .slick-next {
+  color: red;
   right: -25px;
 }
 
@@ -900,6 +986,7 @@ a {
 
 .slick-next:before {
   content: ">";
+  color: red;
 }
 
 [dir="rtl"] .slick-next:before {
@@ -925,8 +1012,8 @@ a {
 .slick-dots li {
   position: relative;
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 12px;
+  width: 12px;
   margin: 0 5px;
   padding: 0;
   cursor: pointer;

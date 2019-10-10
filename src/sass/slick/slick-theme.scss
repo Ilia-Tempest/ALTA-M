@@ -108,6 +108,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         content: "<";
+        color: #f93d3d;
         [dir="rtl"] & {
             content: $slick-next-character;
         }
@@ -115,13 +116,15 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    color: red;
+    right: -50px;
     [dir="rtl"] & {
         left: -25px;
         right: auto;
     }
     &:before {
         content: ">";
+        color: red;
         [dir="rtl"] & {
             content: $slick-prev-character;
         }
@@ -146,8 +149,8 @@ $slick-opacity-not-active: 0.25 !default;
     li {
         position: relative;
         display: inline-block;
-        height: 20px;
-        width: 20px;
+        height: 12px;
+        width: 12px;
         margin: 0 5px;
         padding: 0;
         cursor: pointer;

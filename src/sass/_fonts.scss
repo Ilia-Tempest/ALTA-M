@@ -55,17 +55,9 @@ margin-right: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: red
+
 }
-.slick-prev:before {
-  content: "<";
-  left: -50;
-  
-}
-.slick-next:before {
-  content: ">";
-  
-}
+
 
 .slick-slide {
 transition: all ease-in-out .3s;

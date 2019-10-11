@@ -1,30 +1,46 @@
 @font-face {
   font-family: 'San Francisco Text Light';
-  src: url('fonts/SFUI Text/SFUIText-Light.eot');
-  src: url('fonts/SFUI Text/SFUIText-Light.eot?#iefix') format('embedded-opentype'),
-  url('fonts/SFUI Text/SFUIText-Light.woff') format('woff'),
-  url('fonts/SFUI Text/SFUIText-Light.ttf') format('truetype');
+  src: url('../fonts/SFUI-Text/SFUIText-Light.eot');
+  src: url('../fonts/SFUI-Text/SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFUI-Text/SFUIText-Light.woff') format('woff'),
+  url('../fonts/SFUI-Text/SFUIText-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
   }
 
   @font-face {
     font-family: 'San Francisco Text Bold';
-    src: url('fonts/SFUI Text/SFUIText-Bold.eot');
-    src: url('fonts/SFUI Text/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/SFUI Text/SFUIText-Bold.woff') format('woff'),
-    url('fonts/SFUI Text/SFUIText-Bold.ttf') format('truetype');
+    src: url('../fonts/SFUI-Text/SFUIText-Bold.eot');
+    src: url('../fonts/SFUI-Text/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUI-Text/SFUIText-Bold.woff') format('woff'),
+    url('../fonts/SFUI-Text/SFUIText-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: auto;
     }
+    @font-face {
+      font-family: 'Georgia Regular';
+      src: url('../fonts/Georgia/');
+      src: url('../fonts/Georgia/') format('embedded-opentype'),
+      url('../fonts/Georgia/Georgia.woff') format('woff'),
+      url('../fonts/Georgia/Georgia.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: auto;
+      }
 
 @mixin light {
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Light, sans-serif;
 }
 @mixin bold {
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Bold, sans-serif;
+}
+@mixin georgia {
+  font-weight: 400;
+  font-family: Georgia Regular, sans-serif;
 }
 
 
@@ -38,8 +54,7 @@
   font-size: 0;
   width: 1px;
   height: 1px;
-  border: 1px black solid;
-
+  border: 1px #cbcbcb solid;
 }
 
 

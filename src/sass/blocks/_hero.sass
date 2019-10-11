@@ -4,12 +4,13 @@
   background-color: none
   position: relative
   &__phone
-    margin-right: 20px
+    margin-right: 54px
     display: flex
     align-items: center
     &-text
-       color: #3c3c3b
-       font-size: 24px
+      color: #3c3c3b
+      font-size: 24px
+      +georgia
   &__navbar
     display: flex
     align-items: center
@@ -19,14 +20,14 @@
     height: 22px
     margin-right: 20px
   &__button
-    margin-right: 150px
+    margin-right: 170px
     cursor: pointer
     color: #ffffff
-    border: 1px solid black
     background-color: #f93d3d
     padding: 10px 15px
     &-text
       font-size: 18px
+      +light
     &-img
       margin-right: 10px
   &__email
@@ -66,7 +67,7 @@
     margin-right: 50px
         
   &__logo
-    margin-right: 25px
+    margin-right: 60px
   &__log
     display: none
   &__item
@@ -79,10 +80,12 @@
   padding-top: 100px
   &__title
     display: inline-block
-    font-size: 40px
-    margin-bottom: 50px
-    color: #010101
-    letter-spacing: 0.6px
+    color: #010101;
+    font-family: "Bebas Neue Regular";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0.6px;
   &__form
     display: flex
     align-items: center
@@ -91,26 +94,21 @@
     width: 362px
     height: 60px
     margin-right: 30px
+    background-color: #ffffff
   &__button
-    display: flex
-    align-items: center
-    padding: 12px 15px
     background-color: #f93d3d
-    border: 1px solid black
     cursor: pointer
+    &-item
+      padding: 22px 16px
+      display: flex
+      justify-content: center
+      align-items: center
     &-text
       color: #ffffff
       font-size: 18px
       margin-left: 10px
       
-@media (media: max-width: 1920px)
-.header
-  padding-top: 100px
-  &__title
-    display: inline-block
-    font-size: 60px
-    margin-bottom: 50px
-  
+
     
 
     

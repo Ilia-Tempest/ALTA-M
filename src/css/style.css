@@ -2,6 +2,7 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #f5f5f5;
 }
 
 img {
@@ -15,7 +16,6 @@ a {
 
 .section {
   padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 @media (max-width: 768px) {
@@ -27,18 +27,29 @@ a {
 
 @font-face {
   font-family: 'San Francisco Text Light';
-  src: url("fonts/SFUI Text/SFUIText-Light.eot");
-  src: url("fonts/SFUI Text/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("fonts/SFUI Text/SFUIText-Light.woff") format("woff"), url("fonts/SFUI Text/SFUIText-Light.ttf") format("truetype");
+  src: url("../fonts/SFUI-Text/SFUIText-Light.eot");
+  src: url("../fonts/SFUI-Text/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUI-Text/SFUIText-Light.woff") format("woff"), url("../fonts/SFUI-Text/SFUIText-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
   font-family: 'San Francisco Text Bold';
-  src: url("fonts/SFUI Text/SFUIText-Bold.eot");
-  src: url("fonts/SFUI Text/SFUIText-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SFUI Text/SFUIText-Bold.woff") format("woff"), url("fonts/SFUI Text/SFUIText-Bold.ttf") format("truetype");
+  src: url("../fonts/SFUI-Text/SFUIText-Bold.eot");
+  src: url("../fonts/SFUI-Text/SFUIText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUI-Text/SFUIText-Bold.woff") format("woff"), url("../fonts/SFUI-Text/SFUIText-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Georgia Regular';
+  src: url("../fonts/Georgia/");
+  src: url("../fonts/Georgia/") format("embedded-opentype"), url("../fonts/Georgia/Georgia.woff") format("woff"), url("../fonts/Georgia/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
 }
 
 .slick-dots {
@@ -55,7 +66,7 @@ a {
   font-size: 0;
   width: 1px;
   height: 1px;
-  border: 1px black solid;
+  border: 1px #cbcbcb solid;
 }
 
 .slick-prev:before,
@@ -94,14 +105,14 @@ a {
 /*Стили для шапки*/
 .hero {
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Light, sans-serif;
   padding-top: 50px;
   background-color: none;
   position: relative;
 }
 
 .hero__phone {
-  margin-right: 20px;
+  margin-right: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +124,8 @@ a {
 .hero__phone-text {
   color: #3c3c3b;
   font-size: 24px;
+  font-weight: 400;
+  font-family: Georgia Regular, sans-serif;
 }
 
 .hero__navbar {
@@ -133,16 +146,17 @@ a {
 }
 
 .hero__button {
-  margin-right: 150px;
+  margin-right: 170px;
   cursor: pointer;
   color: #ffffff;
-  border: 1px solid black;
   background-color: #f93d3d;
   padding: 10px 15px;
 }
 
 .hero__button-text {
   font-size: 18px;
+  font-weight: 400;
+  font-family: San Francisco Text Light, sans-serif;
 }
 
 .hero__button-img {
@@ -160,7 +174,7 @@ a {
 
 .hero__email-text {
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Light, sans-serif;
   font-size: 24px;
   color: #3c3c3b;
 }
@@ -186,7 +200,7 @@ a {
   padding-top: 60px;
   padding-left: 0;
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Light, sans-serif;
   font-size: 30px;
 }
 
@@ -205,7 +219,7 @@ a {
 }
 
 .saidbar__logo {
-  margin-right: 25px;
+  margin-right: 60px;
 }
 
 .saidbar__log {
@@ -216,7 +230,7 @@ a {
   margin-right: 25px;
   color: #3c3c3b;
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Light, sans-serif;
   font-size: 30px;
 }
 
@@ -226,9 +240,12 @@ a {
 
 .header__title {
   display: inline-block;
-  font-size: 40px;
-  margin-bottom: 50px;
   color: #010101;
+  font-family: "Bebas Neue Regular";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 0.6px;
 }
 
 .header__form {
@@ -247,19 +264,25 @@ a {
   width: 362px;
   height: 60px;
   margin-right: 30px;
+  background-color: #ffffff;
 }
 
 .header__button {
+  background-color: #f93d3d;
+  cursor: pointer;
+}
+
+.header__button-item {
+  padding: 22px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px 15px;
-  background-color: #f93d3d;
-  border: 1px solid black;
-  cursor: pointer;
 }
 
 .header__button-text {
@@ -410,7 +433,7 @@ a {
   }
   .header__title {
     font-weight: 400;
-    font-family: San Francisco Text Light;
+    font-family: San Francisco Text Bold, sans-serif;
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.23px;
@@ -427,7 +450,7 @@ a {
 /*Стили для блока о нас*/
 .about__title {
   font-family: "Bebas Neue Regular";
-  font-size: 40px;
+  font-size: 60px;
   color: #010101;
   margin-bottom: 50px;
 }
@@ -439,7 +462,7 @@ a {
   line-height: 30px;
   letter-spacing: 0.24px;
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Light, sans-serif;
 }
 
 .about__image {
@@ -469,7 +492,7 @@ a {
   margin-bottom: 60px;
   color: #010101;
   font-family: "Bebas Neue Regular";
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .work__container {
@@ -498,12 +521,16 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 60px;
 }
 
 .work__text {
+  color: #010101;
   text-align: center;
   font-size: 20px;
   line-height: 26px;
+  font-weight: 400;
+  font-family: San Francisco Text Light, sans-serif;
 }
 
 .work__image {
@@ -547,7 +574,7 @@ a {
 .all-work-main {
   color: #010101;
   font-family: "Bebas Neue Regular";
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 60px;
 }
 
@@ -597,16 +624,18 @@ a {
 
 .all-work__text {
   font-weight: 400;
-  font-family: San Francisco Text Light;
+  font-family: San Francisco Text Light, sans-serif;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 130px;
   color: #fefefe;
   font-size: 24px;
   line-height: 30px;
+  display: inline-block;
 }
 
 .all-work__title {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-left: 50px;
   color: #fefefe;
   font-family: "Bebas Neue Regular";
@@ -614,6 +643,7 @@ a {
 }
 
 .all-work__subtitle {
+  margin-bottom: 20px;
   padding-left: 50px;
   color: #fefefe;
   font-size: 30px;
@@ -632,6 +662,8 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
+  margin-bottom: 40px;
+  margin-right: 40px;
 }
 
 .all-work__button-img {
@@ -646,6 +678,7 @@ a {
     display: block;
   }
   .all-work-main1 {
+    color: #010101;
     font-family: "Bebas Neue Regular";
     font-size: 40px;
     margin-bottom: 30px;
@@ -957,12 +990,12 @@ a {
 }
 
 .slick-prev {
-  left: -65px;
+  left: -85px;
 }
 
 [dir="rtl"] .slick-prev {
-  left: auto;
-  right: -25px;
+  right: auto;
+  right: -50px;
 }
 
 .slick-prev:before {
@@ -975,18 +1008,16 @@ a {
 }
 
 .slick-next {
-  color: red;
-  right: -25px;
+  right: -50px;
 }
 
 [dir="rtl"] .slick-next {
   left: -25px;
-  right: auto;
 }
 
 .slick-next:before {
   content: ">";
-  color: red;
+  color: #f93d3d;
 }
 
 [dir="rtl"] .slick-next:before {

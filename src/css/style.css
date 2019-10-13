@@ -1015,6 +1015,10 @@ input[id="price__six"]:checked ~ .text5 {
   color: #ffffff;
 }
 
+.price {
+  margin-bottom: 100px;
+}
+
 .price__item {
   margin-top: 25px;
   display: -webkit-box;
@@ -1050,6 +1054,9 @@ input[id="price__six"]:checked ~ .text5 {
 }
 
 @media (max-width: 768px) {
+  .price {
+    margin-bottom: 0;
+  }
   .price__title {
     color: #010101;
     font-family: "Bebas Neue Regular";
@@ -1062,10 +1069,6 @@ input[id="price__six"]:checked ~ .text5 {
   }
   .price__mobail {
     display: block;
-    color: #000000;
-    font-family: "SFUI Text";
-    font-size: 14px;
-    font-weight: 300;
   }
   .price__mobail-item {
     margin-top: 14px;
@@ -1073,6 +1076,120 @@ input[id="price__six"]:checked ~ .text5 {
   .price__mobail-img {
     margin-right: 10px;
   }
+}
+
+/*Стили для блока contacts*/
+.contacts {
+  background-image: url(../img/contacts/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+
+.contacts__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__title {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Bebas Neue Regular";
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.contacts__input {
+  width: 362px;
+  height: 60px;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.contacts__button {
+  margin: auto;
+  margin-top: 50px;
+  margin-left: 160px;
+  width: 221px;
+  height: 60px;
+  background-color: #f93d3d;
+  border: 0;
+  display: block;
+  color: #ffffff;
+  font-family: "SFUI Text";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.contacts__button-img {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    background-image: none;
+  }
+  .contacts__button {
+    margin-left: 30px;
+  }
+  .contacts__title {
+    color: #010101;
+    font-family: "Bebas Neue Regular";
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+/*Стили для блока footer*/
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__title {
+  font-weight: 400;
+  font-family: San Francisco Text Bold, sans-serif;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.footer__text {
+  color: #3c3c3b;
+  font-family: "SFUI Text";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
 }
 
 /*Стили для всплывающего окна*/
@@ -1153,6 +1270,7 @@ input[id="price__six"]:checked ~ .text5 {
   }
   .overlay__input {
     margin-top: 40px;
+    width: 300px;
   }
   .overlay .flex-popap .popap {
     height: 320px;

@@ -89,7 +89,8 @@ input[id="price__six"]:checked ~ .text5
   &:hover
     background-color: #f93d3d
     color: #ffffff
-
+.price
+  margin-bottom: 100px
 .price__item
  margin-top: 25px
  display: flex
@@ -115,6 +116,7 @@ input[id="price__six"]:checked ~ .text5
 
 @media (max-width: 768px)
   .price
+    margin-bottom: 0
     &__title
       color: #010101;
       font-family: "Bebas Neue Regular";
@@ -125,10 +127,7 @@ input[id="price__six"]:checked ~ .text5
       display: none
     &__mobail
       display: block
-      color: #000000;
-      font-family: "SFUI Text";
-      font-size: 14px;
-      font-weight: 300;
+      
       &-item
         margin-top: 14px
       &-img

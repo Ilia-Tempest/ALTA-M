@@ -1,8 +1,40 @@
-  
-@media (max-width: 1500px)
+@media (max-width: 2400px)
+  .header
+    &__title
+      font-size: 55px
+@media (max-width: 2100px)
+  .header
+    &__title
+      font-size: 50px
+@media (max-width: 1900px)
+  .hero
+    &__button
+      margin-right: 100px  
+    &__phone
+      &-text
+        font-size: 20px
+    &__email
+      &-text
+        font-size: 20px
+    &__button
+      &-text
+        font-size: 16px
+  .saidbar
+    &__item
+      font-size: 24px
+    &__logo
+      margin-right: 40px
+  .header
+    &__title
+      font-size: 35px
+@media (max-width: 1580px)
    .hero
      margin-left: 50px
-
+     &__background
+       display: none
+   .header
+     &__title
+       font-size: 40px
 @media (max-width: 1200px)
    .hero
      margin-left: 20px
@@ -12,6 +44,9 @@
        display: none
        width: 706px
        height: 500px
+   .header
+     &__title
+       font-size: 30px
 @media (max-width: 1000px)
    .hero
      margin: 0
@@ -19,6 +54,8 @@
        margin-left: 40px
 
 @media (max-width: 768px)
+  .nav
+    display: block
   .hero
     padding-top: 10px
     max-width: 320px
@@ -27,23 +64,34 @@
     &__background
       display: none
     &__button
+      margin-top: 10px
       margin-right: 0
-      padding: 10px 8px
-      margin: auto
-      
+      display: inline-block
+      margin-left: 60px
+      padding: 8px 10px
+      &-text
+        font-size: 8px
+      &-img
+        width: 5px
+        height: 4px
     &__navbar
       flex-direction: column
       align-items: flex-start
       justify-content: center
     &__navigate-img
-      padding-top: 10px
       display: inline-block
+      position: absolute
+      margin-top: 10px
     &__phone
       padding-right: 10px
-      margin: auto
+      margin-left: 40px
+      display: inline-block
+      padding: 0
+      padding-left: 20px
     &__phone-text
       font-size: 10px
     &__image
+      margin-right: 5px
       width: 10px
       height: 10px
       
@@ -51,6 +99,13 @@
      display: none
      &-text
        font-size: 10px
+     &-text1
+       padding-left: 8px
+       display: block
+       font-size: 10px
+       color: #3c3c3b
+       +bold
+       margin: auto
      &-img
          width: 14px 
          height: 10px
@@ -70,7 +125,7 @@
       width: 76px
       height: 28px
       margin-top: 10px
-      
+      margin-left: 30px
       top: 0
       right: 0
       
@@ -89,19 +144,20 @@
       justify-content: center
       margin-right: 0
     &__button
-      padding: 10px 15px
       margin-top: 15px
+      &__item
+       padding: 10px 10px
+      &__text
+        font-size: 16px
     &__title
       +bold
-      font-size: 20px
+      font-size: 16px
       text-align: center
-      letter-spacing: 0.23px
       display: inline-block
       margin: auto
       width: 273px
       height: 62px
-    &__button
-      display: block
+ 
       
 
 

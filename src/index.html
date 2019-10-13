@@ -23,14 +23,12 @@
       </div>
     <div class="hero">
       <nav class="hero__navbar container">
-        <div ">
-          <img class="hero__navigate-img" src="img/hero/navigate.png" alt="">
-        </div>
         
        <div class="hero__phone">
           <img src="img/hero/phone.png" alt="" class="hero__image">
           <a class="hero__phone-text"
         href="tel:8 (800) 610-61-00">8 (800) 610-61-00</a>
+        <a class="hero__email-text1" href="mailto:zakaz@альта-м.рф">zakaz@alta-m.spb.ru</a>
        </div>
         <div class="hero__button" onclick="show_popap('modal-1')">
           <a>
@@ -46,15 +44,27 @@
         </div>
         <!-- /.hero__email -->
       </nav>
+      <div class="menu">
+        <a class="menu-triger" href="#"></a>
+        <div class="menu-popup">
+          <a class="menu-close" href="#"></a>
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#vid">Виды грузопервозок</a></li>		
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>						
+        </div>
+      </div>
       <img class="saidbar__log" src="img/hero/Alta-m-logo-fin.png">
       <div class="saidbar container">
         
         <ul class="saidbar__menu">
             <img class="saidbar__logo" src="img/hero/Alta-m-logo-fin.png" alt="">
-            <li><a href="#" class="saidbar__item">О нас</a></li>
-            <li><a href="#price" class="saidbar__item ">Виды грузоперевозок</a></li>
-            <li><a href="#fideback" class="saidbar__item">Услуги</a></li>
-            <li><a href="#contact" class="saidbar__item">Контакты</a></li>
+            <li><a href="#about" class="saidbar__item">О нас</a></li>
+            <li><a href="#vid1" class="saidbar__item ">Виды грузоперевозок</a></li>
+            <li><a href="#" class="saidbar__item">Услуги</a></li>
+            <li><a href="#" class="saidbar__item">Контакты</a></li>
              </ul>
       <section class="header container">
         
@@ -85,7 +95,7 @@
     <section class="section about">
       <div class="about-block">
         <div class="container">
-          <h2 class="about__title">О нас
+          <h2 class="about__title" id="about">О нас
               <img class="about__image" src="img/about/bottom.png" alt="">
           </h2> 
           <!-- /.about__title -->
@@ -161,7 +171,7 @@
     </section>
     <!-- /.work -->
     <div class="all-work-mobale container">
-        <h4 class="all-work-main1">
+        <h4 class="all-work-main1" id="vid">
             Виды грузоперевозок
         </h4>
         <div class="all-work__mobile-conteiner">
@@ -233,7 +243,7 @@
     <img src="img/all-work/right.png" class=".slick-prev" alt="">
       <div class="all-work__all">
         <div class="container">
-          <h4 class="all-work-main">
+          <h4 class="all-work-main" id="vid1">
               Виды грузоперевозок
           </h4>
           <div class="all-work__container">
@@ -253,9 +263,9 @@
                   и типу груза (жидкие, твёрдые, сыпучие, огнеопасные и др.)<br>
                   <br>
                   Резюмируем преимущества в один список:  <br>
-                      Гибкая и, зачастую, низкая цена (по сравнению с альтернативными методами) <br>
-                      Универсальность грузов <br>
-                      Любое расстояние, вплоть до межконтинентальных<br>
+                   <img src="img/all-work/right.png" alt="">Гибкая и, зачастую, низкая цена (по сравнению с альтернативными методами) <br>
+                   <img src="img/all-work/right.png" alt="">Универсальность грузов <br>
+                   <img src="img/all-work/right.png" alt="">Любое расстояние, вплоть до межконтинентальных<br>
                        транспортировок
                        <br><br>
                   «Альта М» доставит Ваш груз в любую точку Азии, Европы и Америки, <br>
@@ -294,10 +304,10 @@
                   Помимо прочего, «Альта М» занимает лидирующие позиции по  <br>
                   сохранности груза – мы в ответе за него, как за собственного <br>
                   ребёнка. Услуги, которые мы предоставляем: <br>
-                      Доставка сборных (в контейнере), генеральных, контейнерных и<br>
+                  <img src="img/all-work/right.png" alt="">Доставка сборных (в контейнере), генеральных, контейнерных и<br>
                       навалочных грузов во внутреннем сообщении экспорта РФ; <br>
-                      Экспедирование грузов; <br>
-                      Отслеживание и контроль грузоперевозки. <br>
+                      <img src="img/all-work/right.png" alt="">Экспедирование грузов; <br>
+                      <img src="img/all-work/right.png" alt="">Отслеживание и контроль грузоперевозки. <br>
                       <br>
                   С каждым клиентом работает целая команда <br>
                   наших профессионалов.                  
@@ -441,6 +451,39 @@ $(document).ready(function(){
             nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
         });
     });
+
+
+
+
+
+
+
+
+
+
+
+    $(function() {
+	var $menu_popup = $('.menu-popup');
+	
+	$(".menu-triger, .menu-close").click(function(){
+		$menu_popup.slideToggle(300, function(){
+			if ($menu_popup.is(':hidden')) {
+				$('body').removeClass('body_pointer');
+			} else {
+				$('body').addClass('body_pointer');
+			}					
+		});  
+		return false;
+	});			
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.slideUp(300);
+		}
+	});
+});
+
   </script>
 </body>
 </html>

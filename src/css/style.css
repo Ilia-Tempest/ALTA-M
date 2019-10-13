@@ -1147,6 +1147,7 @@ input[id="price__six"]:checked ~ .text5 {
 @media (max-width: 768px) {
   .contacts {
     background-image: none;
+    padding-bottom: 50px;
   }
   .contacts__button {
     margin-left: 30px;
@@ -1190,6 +1191,28 @@ input[id="price__six"]:checked ~ .text5 {
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
+}
+
+.footer__item {
+  margin-bottom: 40px;
+}
+
+.footer__alta {
+  display: block;
+}
+
+.footer__alta1 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footer__alta {
+    display: none;
+  }
+  .footer__alta1 {
+    margin-top: 40px;
+    display: block;
+  }
 }
 
 /*Стили для всплывающего окна*/

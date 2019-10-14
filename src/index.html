@@ -68,11 +68,11 @@
              </ul>
       <section class="header container">
         
-        <h1 class="header__title">
+        <div class="header__title">
             Предоставляем услуги <br>
             по транспортировке и экспедированию <br>
             грузов в любую точку земного шара
-        </h1>
+        </div>
         <form action="form/mail.php" method="POST" class="header__form">
           <input class="header__input" name="user_phone" required type="tel" placeholder="  Номер телефона">
           <button type="submit" class="header__button">
@@ -156,7 +156,7 @@
                 <img src="img/work/four.png" alt="">
               </div>
               <!-- /.work__image -->
-              <div class="work__text">
+              <div class="work__text" id="one">
                   Правильное заполнение сопроводительных документов
               </div>
               <!-- /.work__text -->
@@ -529,10 +529,10 @@
          <!-- /.contacts__title -->
          <div >
            <form action="form/form.php" method="POST" class="contacts__form">
-             <input type="text" class="contacts__input" required placeholder="  Откуда">
-             <input type="text" class="contacts__input" required  placeholder="  Куда">
-             <input type="text" class="contacts__input" required  placeholder="  Ваше имя">
-             <input type="tel" class="contacts__input"  placeholder="  Номер телефона">
+             <input type="text" class="contacts__input" required placeholder="  Откуда" name="user_about">
+             <input type="text" class="contacts__input" required  placeholder="  Куда" name="user_in">
+             <input type="text" name="user_nameform" class="contacts__input" required  placeholder="  Ваше имя">
+             <input type="tel" name="user_tel" class="contacts__input"  placeholder="  Номер телефона">
              <button type="submit" class="contacts__button">
                 <img class="contacts__button-img" src="img/contacts/cursor.png" alt="">
                 Оставить заявку
@@ -580,34 +580,34 @@
         <!-- /.footer__item -->
         <div class="footer__item">
           <div class="footer__title">
-              Виды грузоперевозок
+             <a class="footer__title-color" href="#one"> Виды грузоперевозок</a>
           </div>
           <!-- /.footer__title -->
           <span class="foooter__text">
-              Авиаперевозки<br>
+              <a  class="footer-text__color" href="#one">Авиаперевозки</a><br>
               <br>
-              Ж/Д перевозки<br>
+              <a  class="footer-text__color" href="#one">Ж/Д перевозки</a><br>
               <br>
-              Автомобильные перевозки<br>
+              <a  class="footer-text__color" href="#one">Автомобильные перевозки</a><br>
               <br>
-              Морские перевозки
+              <a  class="footer-text__color" href="#one">Морские перевозки</a>
           </span>
           <!-- /.foooter__text -->
         </div>
         <!-- /.footer__item -->
         <div class="footer__item">
           <div class="footer__title">
-              Услуги
+             <a  class="footer__title-color"href="#price"> Услуги</a>
           </div>
           <!-- /.footer__title -->
           <span class="foooter__text">
-              Таможенные услуги<br>
+            <a  class="footer-text__color" href="#price">Таможенные услуги</a><br>
               <br>
-              Страхование грузов<br>
+              <a  class="footer-text__color" href="#price">Страхование грузов</a><br>
               <br>
-              Сюрвейерские услуги<br>
+              <a  class="footer-text__color" href="#price">Сюрвейерские услуги</a><br>
               <br>
-              Внутрипортовое экспедирование<br>
+              <a  class="footer-text__color" href="#price">Внутрипортовое экспедирование</a><br>
               <span class="footer__alta1"> Альта М © 2019 All Rights Reserved | Privacy Policy</span>
           </span>
           <!-- /.foooter__text -->
@@ -702,7 +702,18 @@ $(document).ready(function(){
 	});
 });
 
-
+$(document).ready(function() {
+   var margin = 100; // переменная для контроля докрутки
+   $("a").click(function() { // тут пишите условия, для всех ссылок или для конкретных
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top+margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+      }, {
+         duration: 1600, // тут можно контролировать скорость
+         easing: "swing"
+      });
+      return false;
+   });
+});
   </script>
 </body>
 </html>

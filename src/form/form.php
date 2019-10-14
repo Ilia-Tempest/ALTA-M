@@ -4,8 +4,10 @@ require_once('PHPMailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$phone = $_POST['user_phone'];
-
+$about = $_POST['user_about'];
+$in = $_POST['user_in'];
+$nameform = $_POST['user_nameform'];
+$phone = $_POST['user_tel'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -26,7 +28,7 @@ $mail->addAddress('zakaz@alta-m.spb.ru');     // Кому будет уходи�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта "ООО АЛЬТА М" сайта';
-$mail->Body    = '<br>Пользователь оставил заявку, его телефон: ' .$phone;
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

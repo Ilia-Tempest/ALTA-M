@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #f93d3d;
+  text-decoration: none;
+}
+
 .section {
   padding-top: 100px;
 }
@@ -319,7 +324,7 @@ a {
   }
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1950px) {
   .hero__button {
     margin-right: 100px;
   }
@@ -387,7 +392,7 @@ a {
   }
   .hero {
     padding-top: 10px;
-    max-width: 320px;
+    width: 320px;
     margin: auto;
     position: relative;
   }
@@ -399,10 +404,10 @@ a {
     margin-right: 0;
     display: inline-block;
     margin-left: 60px;
-    padding: 8px 10px;
+    padding: 8px 6px;
   }
   .hero__button-text {
-    font-size: 8px;
+    font-size: 10px;
   }
   .hero__button-img {
     width: 5px;
@@ -510,6 +515,9 @@ a {
     margin-top: 30px;
   }
   .header__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -527,12 +535,14 @@ a {
   .header__title {
     font-weight: 400;
     font-family: San Francisco Text Bold, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
-    display: inline-block;
-    margin: auto;
-    width: 273px;
-    height: 62px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -775,7 +785,7 @@ a {
   padding-right: 50px;
   padding-bottom: 130px;
   color: #fefefe;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 30px;
   display: inline-block;
 }
@@ -815,6 +825,10 @@ a {
   bottom: 0;
   margin-bottom: 40px;
   margin-right: 40px;
+}
+
+.all-work__button:hover {
+  color: #ffffff;
 }
 
 .all-work__button-img {
@@ -914,11 +928,13 @@ input[id="price__one"] {
 input[id="price__one"]:checked ~ .text {
   display: inline-block;
   width: 752px;
-  height: 496px;
+  height: 6px;
   color: #000000;
-  font-family: "SFUI Text";
-  font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: San Francisco Text Light, sans-serif;
+  position: absolute;
+  left: 40%;
+  top: 32%;
 }
 
 /*Стили для кнопки Страхование грузов*/
@@ -930,11 +946,13 @@ input[id="price__two"] {
 input[id="price__two"]:checked ~ .text1 {
   display: block;
   width: 752px;
-  height: 496px;
+  height: 6px;
   color: #000000;
-  font-family: "SFUI Text";
-  font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: San Francisco Text Light, sans-serif;
+  position: absolute;
+  left: 40%;
+  top: 32%;
 }
 
 /*Стили для кнопки Сюрвейерские услуги*/
@@ -946,7 +964,10 @@ input[id="price__three"] {
 input[id="price__three"]:checked ~ .text2 {
   display: block;
   width: 752px;
-  height: 496px;
+  height: 6px;
+  position: absolute;
+  left: 40%;
+  top: 32%;
 }
 
 /*Стили для кнопки Внутрипортовое экспедирование*/
@@ -958,7 +979,10 @@ input[id="price__four"] {
 input[id="price__four"]:checked ~ .text3 {
   display: block;
   width: 752px;
-  height: 496px;
+  height: 6px;
+  position: absolute;
+  left: 40%;
+  top: 32%;
 }
 
 /*Стили для кнопки Импорт груза*/
@@ -970,7 +994,10 @@ input[id="price__five"] {
 input[id="price__five"]:checked ~ .text4 {
   display: block;
   width: 752px;
-  height: 496px;
+  height: 6px;
+  position: absolute;
+  left: 40%;
+  top: 32%;
 }
 
 /*Стили для кнопки Экспорт груза*/
@@ -982,7 +1009,10 @@ input[id="price__six"] {
 input[id="price__six"]:checked ~ .text5 {
   display: block;
   width: 752px;
-  height: 496px;
+  height: 6px;
+  position: absolute;
+  left: 40%;
+  top: 32%;
 }
 
 /* Стилизация псевдокнопки */
@@ -1017,6 +1047,7 @@ input[id="price__six"]:checked ~ .text5 {
 
 .price {
   margin-bottom: 100px;
+  position: relative;
 }
 
 .price__item {
@@ -1024,9 +1055,9 @@ input[id="price__six"]:checked ~ .text5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .price__title {
@@ -1044,9 +1075,9 @@ input[id="price__six"]:checked ~ .text5 {
 
 .text, .text1, .text2, .text3, .text4, .text5 {
   font-size: 16px;
+  margin-left: 30px;
   font-weight: 400;
   font-family: San Francisco Text Light, sans-serif;
-  margin-left: 30px;
 }
 
 .price__mobail {
@@ -1186,11 +1217,9 @@ input[id="price__six"]:checked ~ .text5 {
 }
 
 .footer__text {
+  font-weight: 400;
+  font-family: San Francisco Text Light, sans-serif;
   color: #3c3c3b;
-  font-family: "SFUI Text";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 16px;
 }
 
 .footer__item {
@@ -1213,6 +1242,18 @@ input[id="price__six"]:checked ~ .text5 {
     margin-top: 40px;
     display: block;
   }
+}
+
+.footer__title-color {
+  font-weight: 400;
+  font-family: San Francisco Text Bold, sans-serif;
+  color: #000000;
+}
+
+a.footer-text__color {
+  font-weight: 400;
+  font-family: San Francisco Text Light, sans-serif;
+  color: #3c3c3b;
 }
 
 /*Стили для всплывающего окна*/

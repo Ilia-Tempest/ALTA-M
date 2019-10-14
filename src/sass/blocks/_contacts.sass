@@ -1,4 +1,5 @@
 .contacts
+  position: relative
   background-image: url(../img/contacts/background.png)
   background-size: cover
   background-repeat: no-repeat
@@ -39,8 +40,31 @@
     font-weight: 300;
     &-img
       margin-right: 10px
+.contact
+  &__conf
+   display: flex
+   justify-content: center
+   align-items: center
+   flex-direction: column
+   font-size: 14px
+   flex-wrap: wrap
+   position: absolute
+   top: 74%
+   left: 42%
+  &__label
+    color: #ffffff
+    vertical-align: middle
+    margin-right: 10px
 
 @media (max-width: 768px)
+  .contact
+    &__conf
+      font-size: 10px
+      top: 96%
+      left: 8%
+    &__label
+      color: black
+
   .contacts
     background-image: none
     padding-bottom: 50px

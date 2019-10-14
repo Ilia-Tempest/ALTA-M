@@ -7,7 +7,7 @@ $mail->CharSet = 'utf-8';
 $about = $_POST['user_about'];
 $in = $_POST['user_in'];
 $nameform = $_POST['user_nameform'];
-$phone = $_POST['user_tel'];
+$tel = $_POST['user_tel'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -28,7 +28,7 @@ $mail->addAddress('zakaz@alta-m.spb.ru');     // Кому будет уходи�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта "ООО АЛЬТА М" сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
+$mail->Body    = '' .$nameform . ' оставил заявку, его телефон ' .$tel. '<br>Отуда клиенту нужно доставить груз: ' .$about. '<br>Куда клиенту нужно доставить груз' .$in;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

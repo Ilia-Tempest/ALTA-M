@@ -9,13 +9,13 @@ $phone = $_POST['user_phone'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'ssl://smtp.yandex.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'ssl://server92.hosting.reg.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'schumakdmitry@yandex.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '1r!sL4Tt'; // Ваш пароль от почты с которой будут отправляться письма                           // Enable TLS encryption, `ssl` also accepted
+$mail->Username = 'admin@alta-m.spb.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '12345678aa'; // Ваш пароль от почты с которой будут отправляться письма                           // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('schumakdmitry@yandex.ru'); // от кого будет уходить письмо?
+$mail->setFrom('admin@alta-m.spb.ru'); // от кого будет уходить письмо?
 $mail->addAddress('zakaz@alta-m.spb.ru');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
